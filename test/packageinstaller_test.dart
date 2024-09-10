@@ -6,23 +6,29 @@ import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
 class MockPackageinstallerPlatform
     with MockPlatformInterfaceMixin
-    implements PackageinstallerPlatform {
-
+    implements PackageInstallerPlatform {
   @override
   Future<String?> getPlatformVersion() => Future.value('42');
+
+  @override
+  Future<bool> canRequestPackageInstalls() => Future.value(true);
+
+  @override
+  Future<void> installFromFile(String file) => Future.value();
 }
 
 void main() {
-  final PackageinstallerPlatform initialPlatform = PackageinstallerPlatform.instance;
+  final PackageInstallerPlatform initialPlatform =
+      PackageInstallerPlatform.instance;
 
   test('$MethodChannelPackageinstaller is the default instance', () {
     expect(initialPlatform, isInstanceOf<MethodChannelPackageinstaller>());
   });
 
   test('getPlatformVersion', () async {
-    Packageinstaller packageinstallerPlugin = Packageinstaller();
+    PackageInstaller packageinstallerPlugin = PackageInstaller();
     MockPackageinstallerPlatform fakePlatform = MockPackageinstallerPlatform();
-    PackageinstallerPlatform.instance = fakePlatform;
+    PackageInstallerPlatform.instance = fakePlatform;
 
     expect(await packageinstallerPlugin.getPlatformVersion(), '42');
   });

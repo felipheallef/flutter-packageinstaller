@@ -1,7 +1,7 @@
 name: packageinstaller
-description: "A new Flutter plugin project."
+description: "Offers the ability to install, upgrade, and remove applications on Android devices."
 version: 0.0.1
-homepage:
+homepage: https://github.com/felipheallef/flutter-packageinstaller
 
 environment:
   sdk: ^3.5.0
@@ -36,7 +36,7 @@ flutter:
     platforms:
       android:
         package: dev.felipheallef.packageinstaller
-        pluginClass: PackageinstallerPlugin
+        pluginClass: PackageInstallerPlugin
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:

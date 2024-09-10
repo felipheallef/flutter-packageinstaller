@@ -50,7 +50,7 @@ android {
     }
 
     dependencies {
-        implementation files('/Users/felipheallef/development/flutter/bin/cache/artifacts/engine/android-arm64/flutter.jar')
+//        implementation files('/Users/felipheallef/development/flutter/bin/cache/artifacts/engine/android-arm64/flutter.jar')
         testImplementation("org.jetbrains.kotlin:kotlin-test")
         testImplementation("org.mockito:mockito-core:5.0.0")
     }
