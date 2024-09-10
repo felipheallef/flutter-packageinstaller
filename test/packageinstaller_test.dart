@@ -1,7 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:packageinstaller/packageinstaller.dart';
-import 'package:packageinstaller/packageinstaller_platform_interface.dart';
-import 'package:packageinstaller/packageinstaller_method_channel.dart';
+import 'package:flutter_package_installer/flutter_package_installer.dart';
+import 'package:flutter_package_installer/packageinstaller_platform_interface.dart';
+import 'package:flutter_package_installer/packageinstaller_method_channel.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
 class MockPackageinstallerPlatform

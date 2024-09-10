@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 
 import 'package:flutter/services.dart';
-import 'package:packageinstaller/packageinstaller.dart';
+import 'package:flutter_package_installer/flutter_package_installer.dart';
 import 'package:path/path.dart' show join;
 
 void main() {

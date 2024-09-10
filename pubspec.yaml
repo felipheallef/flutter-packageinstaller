@@ -1,4 +1,4 @@
-name: packageinstaller
+name: flutter_package_installer
 description: "Offers the ability to install, upgrade, and remove applications on Android devices."
 version: 0.0.1
 homepage: https://github.com/felipheallef/flutter-packageinstaller
